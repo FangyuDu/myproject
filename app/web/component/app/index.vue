@@ -2,7 +2,10 @@
   .page-home
     section.control-panel
       .container
-        button 下载
+        el-button
+          a(href="/api/checkFonts") 检测新的字体
+        el-button
+          a(href="/api/fontDownload") 下载
     section.container
       ul.tabs.clearfix
         li.tabs-item(:class="{'active': pn === item.value}" v-for="item in l" :key="item.value" v-text="item.label" @click="changeView(item.value)")

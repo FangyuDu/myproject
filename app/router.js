@@ -7,4 +7,5 @@ module.exports = app => {
   /* 接口 */
   app.get('/api/test', app.controller.app.list)
   app.get('/api/fontDownload', app.controller.api.fontDownload)
+  app.get('/api/checkFonts', app.controller.api.checkFonts)
 };
