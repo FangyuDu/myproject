@@ -8,4 +8,5 @@ module.exports = app => {
   app.get('/api/test', app.controller.app.list)
   app.get('/api/fontDownload', app.controller.api.fontDownload)
   app.get('/api/checkFonts', app.controller.api.checkFonts)
+  app.get('/api/scanFonts', app.controller.api.scanFonts)
 };

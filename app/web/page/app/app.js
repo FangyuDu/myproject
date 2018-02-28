@@ -5,6 +5,7 @@ import app from './app.vue';
 import App from 'app';
 import Layout from 'component/layout/app';
 import ElementUI from 'element-ui';
+import axios from 'axios';
 
 App.use(ElementUI);
 App.component(Layout.name, Layout);

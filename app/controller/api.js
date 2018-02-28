@@ -5,6 +5,7 @@ const path = require('path')
 const fontBuild = require('../model/font_build')
 const JSZip = require('jszip')
 const checkFonts = require('../model/checkFonts')
+const scanFonts = require('../model/checkClass.js')
 
 exports.fontDownload = async ctx => {
   let fb = new fontBuild(ctx)
@@ -18,4 +19,8 @@ exports.fontDownload = async ctx => {
 exports.checkFonts = async ctx => {
   ctx.attachment('test.svg')
   ctx.body = checkFonts()
+}
+
+exports.scanFonts = async ctx => {
+  ctx.body = scanFonts(ctx)
 }

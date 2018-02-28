@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+<font id="_cmsui-font" horiz-adv-x="1000" >
+<font-face font-family="cmsui-font" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="test" unicode="&#xe601;" d="M178.6 14.9c-91.1 0-165 73.9-165 165s73.9 165 165 165 165-73.9 165-165-73.8-165-165-165z m0 315c-82.8 0-150-67.2-150-150s67.2-150 150-150 150 67.2 150 150-67.1 150-150 150z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

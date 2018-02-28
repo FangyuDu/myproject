@@ -39,7 +39,7 @@ module.exports = function(data = {}) {
   conf.font.familyname = data.fontname || 'cmsui-font';
   conf.font.ascent = 850
   conf.font.descent = -150
-  conf.glyphs = [{
+  conf.glyphs = data.glyphs || [{
     css: 'test',
     code: 'e601',
     d: 'M501 809c-253 0-458-205-458-458 0-253 205-458 458-458s459 205 459 458c0 253-206 458-459 458z m0-855c-219 0-397 178-397 397s178 397 397 397 398-177 398-397-178-397-398-397z m-233 211h213v137h-175v37h175v109h-193v36h425v-36h-191v-109h175v-37h-175v-137h212v-36h-466v36z m195 389l35 19c20-29 33-52 42-68l-38-20c-17 32-30 55-39 69z',
