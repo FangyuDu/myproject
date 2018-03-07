@@ -3,9 +3,9 @@
     section.control-panel
       .container
         el-button
-          a(href="/api/checkFonts") 检测新的字体
+          a 预览
         el-button
-          a(href="/api/fontDownload") 打包下载
+          a(@click="download") 打包下载
     section.container
       ul.tabs.clearfix
         li.tabs-item(:class="{'active': pn === item.value}" v-for="item in l" :key="item.value" v-text="item.label" @click="changeView(item.value)")
@@ -42,6 +42,13 @@ export default {
   methods: {
     changeView(pn = 'selectIcon') {
       this.pn = pn
+    },
+    download() {
+      const {fontList} = this.$store.state
+      console.log(fontList)
+      this.$http.post('/api/downloadFonts').then(res => {
+        console.log(res)
+      })
     }
   }
 }

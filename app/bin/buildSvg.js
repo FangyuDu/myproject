@@ -35,11 +35,12 @@ const svgFontTemplate = _.template(
   '</svg>')
 function import_svg_image(data, file) {
   let res = svg_image_flatten(data)
+  console.log('测试', res)
   let scale = 1000 / res.height
   let d = new svgpath(res.d)
-            .translate(-res.x, -res.y)
-            .scale(scale)
-            // .rotate(180)
+            .translate(0, 0)
+            // .scale(scale)
+            .rotate(180)
             .abs()
             .round(1)
             .toString()
@@ -48,6 +49,8 @@ function import_svg_image(data, file) {
     css: 'test',
     code:'e601',
     charRef: 'e601',
+    d,
+    width,
     svg: {
       path: d,
       width
